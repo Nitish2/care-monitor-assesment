@@ -1,0 +1,33 @@
+/* src/app/login/login.component.css */
+.login-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.login-card {
+  max-width: 420px;
+  width: 100%;
+}
+
+.full-width {
+  width: 100%;
+  margin: 12px 0;
+}
+
+.error {
+  color: #f44336;
+  text-align: center;
+  margin-top: 16px;
+  font-weight: 500;
+}
+
+.hint {
+  text-align: center;
+  margin-top: 20px;
+  color: #666;
+  font-size: 14px;
+}

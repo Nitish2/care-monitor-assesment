@@ -1,0 +1,6 @@
+.mat-mdc-button-base .mat-icon {
+    min-height: fit-content;
+    flex-shrink: 0;
+    font-size: 16px;
+    width: 70px;
+}

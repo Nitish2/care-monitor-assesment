@@ -1,0 +1,20 @@
+<mat-toolbar color="primary">
+  <span>CareMonitor Dashboard</span>
+  <span class="spacer"></span>
+  <a mat-button routerLink="/list">View Devices</a>
+  <button mat-icon-button (click)="logout()">
+    <mat-icon>logout</mat-icon>
+  </button>
+</mat-toolbar>
+
+<div class="content">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Welcome back, {{ email }}!</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <p>You have successfully logged in.</p>
+      <button mat-raised-button color="accent" routerLink="/list">Go to Medical Devices</button>
+    </mat-card-content>
+  </mat-card>
+</div>

@@ -11,7 +11,6 @@
 - Custom mock API via interceptor
 - RxJS best practices
 - Modular design
-- All bonus points completed (lazy loading, spinner, tests ready)
 
 ### Login Credentials
 Email: `user@example.com`  

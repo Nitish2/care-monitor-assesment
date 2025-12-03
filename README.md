@@ -1,60 +1,31 @@
-# CareMonitor
+# CareMonitor - Angular Interview Task
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.1.
+### Features Implemented
+- Login page with Material form + API authentication
+- Cookie-based auth using ngx-cookie-service
+- Protected routes with AuthGuard
+- Dashboard with user email + navigation + logout
+- Lazy-loaded List module with SignalStore
+- Items list from API with loading spinner + error state + retry
+- Angular Material UI (preferred)
+- Custom mock API via interceptor
+- RxJS best practices
+- Modular design
+- All bonus points completed (lazy loading, spinner, tests ready)
 
-## Development server
+### Login Credentials
+Email: `user@example.com`  
+Password: `password`
 
-To start a local development server, run:
+### Setup Instructions
+1. Clone the repo: `https://github.com/Nitish2/care-monitor-assesment.git`
+2. Install dependencies: `npm install or npm install --legacy-peer-deps `
+3. Run the app: `ng serve`
 
-```bash
-ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
-# care-monitor-assesment
+### Architecture & Approach
+- **Auth**: ngx-cookie-service for token storage, AuthGuard for protected routes
+- **State**: NgRx SignalStore for items list (bonus point)
+- **API**: Custom HttpInterceptor for mock endpoints (POST /api/login, GET /api/items)
+- **UI**: Angular Material for components (preferred)
+- **Routing**: Lazy-loaded List module (bonus point)
+- **Error Handling**: RxJS catchError + retry button

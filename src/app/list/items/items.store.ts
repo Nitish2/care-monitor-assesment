@@ -24,7 +24,6 @@ export const ItemsStore = signalStore(
 
   withMethods((store) => {
     const http = inject(HttpClient);
-
     return {
       loadItems: rxMethod<void>(
         pipe(

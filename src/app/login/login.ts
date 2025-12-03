@@ -29,9 +29,9 @@ form:FormGroup;
 
     const { email, password } = this.form.value;
     this.auth.login(email!, password!).subscribe({
-      next: (data) => this.router.navigate(['/dashboard']),
-      error: () => {
-        this.error = 'Invalid credentials';
+      next: () => this.router.navigate(['/dashboard']),
+      error: (err) => {
+        this.error = err.error;
         this.loading = false;
       }
     });
